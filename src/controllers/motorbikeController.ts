@@ -28,7 +28,7 @@ export const getMotorbikeData = async (req: Request, res: Response) => {
     } else if (manufacturer === "yamaha") {
       console.log(generateYamahaData());
       finalCarData = generateYamahataData();
-    } else if (manufacturer === "harley-Division") {
+    } else if (manufacturer === "harleyDivision") {
       console.log(generateHarleyDivisionData());
       finalCarData = generateHarleyDivisionData();
     } else if (manufacturer === "bugatti") {
@@ -40,7 +40,7 @@ export const getMotorbikeData = async (req: Request, res: Response) => {
     }
 
     // We will return the weather data as JSON
-    res.status(200).json(finalCarData);
+    res.status(200).json(finalMotorbikeData);
   } catch (error) {
     // If there is an error, we will log it and send a 500 status code
     res.status(500).send("Error in getting motorbike data");
