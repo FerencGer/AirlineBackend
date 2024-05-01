@@ -18,10 +18,10 @@ export const validateCityName = param("city")
   // We will use the withMessage method to set a custom error message
   .withMessage("City name must be either london or dublin");
 
-export const validateCarName = param("manufacturer")
+export const validateMotorbikeName = param("manufacturer")
   // We will use the isString method to check if the city param is a string
   .isString()
-  // We will use the isIn method to check if the city param is either london or dublin
-  .isIn(["Honda","Yamaha","Harley-Division","Bugatti", "Suzuki"])
+  // We will use the isIn method to check if the city param is either london, dublin, budapest or liverpool
+  .isIn(["Honda","Yamaha","HarleyDivision","Bugatti", "Suzuki"])
   // We will use the withMessage method to set a custom error message
   .withMessage("Motorbike must be either Yamaha, Harley-Division, Bugatti or Suzuki");
