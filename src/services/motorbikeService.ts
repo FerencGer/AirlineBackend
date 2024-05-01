@@ -37,7 +37,7 @@ export const generateHondaData = (): MotorbikesData => {
 
 export const generateHondaData = (): MotorbikesData => {
   const generatedMotorbikeData: MotorbikesData = {
-    manufacturer: 'Harley-Division',
+    manufacturer: 'HarleyDivision',
     model: 'Aventador',
     year: faker.number.int({ min: new Date().getFullYear() - 10, max: new Date().getFullYear() }),
     color: faker.vehicle.color(),
