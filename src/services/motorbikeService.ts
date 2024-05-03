@@ -22,7 +22,7 @@ export const generateHondaData = (): MotorbikesData => {
 export const generateHondaData = (): MotorbikesData => {
   const generatedMotorbikeData: MotorbikesData = {
     manufacturer: 'Yamaha',
-    model: 'Camry',
+    model: 'R3',
     year: faker.number.int({ min: new Date().getFullYear() - 20, max: new Date().getFullYear() }),
     color: faker.vehicle.color(),
     fuelType: 'Gasoline',
@@ -38,7 +38,7 @@ export const generateHondaData = (): MotorbikesData => {
 export const generateHondaData = (): MotorbikesData => {
   const generatedMotorbikeData: MotorbikesData = {
     manufacturer: 'HarleyDivision',
-    model: 'Aventador',
+    model: 'Street Glide',
     year: faker.number.int({ min: new Date().getFullYear() - 10, max: new Date().getFullYear() }),
     color: faker.vehicle.color(),
     fuelType: 'Diesel',
@@ -54,7 +54,7 @@ export const generateHondaData = (): MotorbikesData => {
 export const generateHondaData = (): MotorbikesData => {
   const generatedMotorbikeData: MotorbikesData = {
     manufacturer: 'Bugatti',
-    model: 'Chiron',
+    model: 'Diavel V4',
     year: faker.number.int({ min: new Date().getFullYear() - 10, max: new Date().getFullYear() }),
     color: faker.vehicle.color(),
     fuelType: 'Gasoline',
