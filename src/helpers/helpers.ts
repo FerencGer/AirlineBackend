@@ -52,4 +52,4 @@ export const storeMotorBikeData = async (data: MotorBikesData): Promise<void> =>
     console.error("Failed to store motorbike data:", error);
   }
   
-};per code
+};

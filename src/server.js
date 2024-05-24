@@ -1,6 +1,6 @@
 import express from "express";
 import weatherRoute from "./routes/weatherRoute.js";
-import carRoute from "./routes/motorbikeRoute.js";
+import motorbikeRoute from "./routes/motorbikeRoute.js";
 import cors from "cors";
 
 // We will create an express app

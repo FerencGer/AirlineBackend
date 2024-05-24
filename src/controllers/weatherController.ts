@@ -33,7 +33,7 @@ export const getWeatherData = async (req: Request, res: Response) => {
       console.log(generateDublinWeatherData());
       finalWeatherData = generateDublinWeatherData();
     } else if (city === "budapest") {
-      console.log(generatebudapestWeatherData());
+      console.log(generateBudapestWeatherData());
       finalWeatherData = generateBudapestWeatherData();
     } else if (city === "liverpool") {
       console.log(generateLiverpoolWeatherData());
@@ -69,11 +69,11 @@ export const getWeatherDailyData = async (req: Request, res: Response) => {
       console.log(generateDublinWeatherDailyData());
       finalWeatherDailyData = generateDublinWeatherDailyData();
     } else if (city === "budapest") {
-      console.log(generateNigeriaWeatherDailyData());
-      finalWeatherDailyData = generateNigeriaWeatherDailyData();
+      console.log(generateBudapestWeatherDailyData());
+      finalWeatherDailyData = generateBudapestWeatherDailyData();
     } else if (city === "liverpool") {
-      console.log(generateFranceWeatherDailyData());
-      finalWeatherDailyData = generateFranceWeatherDailyData();
+      console.log(generateLiverpoolWeatherDailyData());
+      finalWeatherDailyData = generateLiverpoolWeatherDailyData();
     } else {
       // If the city is not london or dublin, budapest or liverpool we will throw an error
       res.status(404).send("City not found");
