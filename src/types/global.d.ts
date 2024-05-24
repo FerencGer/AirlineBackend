@@ -12,7 +12,7 @@ interface WeatherDailyData {
   dayThree: number;
 }
 
-interface MotorbikesData{
+interface MotorBikesData{
   manufacturer: string;  // The manufacturer of the car
   model: string;         // The model of the car
   year: number;          // The year the car was manufactured
