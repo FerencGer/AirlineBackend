@@ -28,7 +28,7 @@ export const storeWeatherData = async (data: WeatherData): Promise<void> => {
   
 };
 
-export const storeMotorBikeData = async (data: MotorbikesData): Promise<void> => {
+export const storeMotorBikeData = async (data: MotorBikesData): Promise<void> => {
   try {
     const client = getClient();
     const account = getAccount();
