@@ -19,21 +19,21 @@ export const getMotorbikeData = async (req: Request, res: Response) => {
     console.log(manufacturer);
 
     // We will create a variable with a type of WeatherData
-    let finalMotorbikeData: MotorbikesData;
+    let finalMotorbikeData: MotorBikesData;
 
     // We will use an if statement to check which city was passed in
     if (manufacturer === "honda") {
       console.log(generateHondaData());
-      finalCarData = generateHondaData();
+      finalMotorbikeData = generateHondaData();
     } else if (manufacturer === "yamaha") {
       console.log(generateYamahaData());
-      finalCarData = generateYamahataData();
+      finalMotorbikeData = generateYamahaData();
     } else if (manufacturer === "harleyDivision") {
       console.log(generateHarleyDivisionData());
-      finalCarData = generateHarleyDivisionData();
+      finalMotorbikeData = generateHarleyDivisionData();
     } else if (manufacturer === "bugatti") {
       console.log(generateBugattiData());
-      finalCarData = generateBugattiData();
+      finalMotorbikeData = generateBugattiData();
     } else {
       // If the motorbike is not listed above, we will throw an error
       res.status(404).send("Motorbike not found");

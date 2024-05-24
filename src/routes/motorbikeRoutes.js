@@ -5,7 +5,7 @@ import { getMotorbikeData } from "../controllers/motorbikeController.js";
 // We will create a router object
 const router = express.Router();
 
-// We will create a route for the car data based on the manufacturer name
+// We will create a route for the motorbike data based on the manufacturer name
 router.get("/:manufacturer", validateMotorbikeName, getMotorbikeData)
 
 // We will export the router
